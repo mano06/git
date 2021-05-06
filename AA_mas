@@ -1,0 +1,8 @@
+#Rsyslog backup
+cp -p /etc/rsyslog.conf  /var/tmp/rsyslog_beforepatch_CHG0795279
+mkdir /var/tmp/rsyslog_4Q2020
+cp -p /etc/rsyslog.d/*.conf  /var/tmp/rsyslog_4Q2020
+
+#Multipath backup
+cp -p /etc/multipath.conf /etc/multipath.conf_CHG0795279
+cp -p /etc/lvm/lvm.conf /etc/lvm/lvm.conf_CHG0795279
